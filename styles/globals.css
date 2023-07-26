@@ -1,35 +1,42 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+html, body {
+  overflow-x: hidden;
 }
 
-* {
-  box-sizing: border-box;
+.modal-video {
+  background: rgba(0, 0, 0, 0.9) !important;
 }
 
-main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.lg-backdrop {
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
-code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
+.lg-react-element {
+  display: none;
 }
 
-.container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.lg-container, .lg-container * {
+  direction: ltr !important;
+}
+
+.rc-slider-handle {
+  border-color: var(--clr-style) !important;
+  background-color: var(--clr-style) !important;
+  opacity: 1 !important;
+}
+
+.rc-slider-handle-dragging {
+  box-shadow: 0 0 0 2px var(--clr-style) !important;
+}
+
+
+.related-products-slider .swiper-container,
+.slider-3items .swiper-container,
+.screenshots-slider .swiper-container {
+  direction: ltr !important;
+}
+
+
+.pricing.style-8 .rc-slider-handle {
+  background-color: #fff !important;
+  border-color: #fff !important;
 }
